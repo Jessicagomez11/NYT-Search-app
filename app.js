@@ -1,13 +1,15 @@
 
-('button').on('click', function(){
+$('button').on('click', function(){
+    console.log("i've been clicked")
 
-    var APIKey = "eafe8765-7839-4cdd-828a-a72feb2a03d7";
+    var data= $(this).attr("userdata")
+    var APIKey = "LpAengxKE1tShOFmfwict82DGB9VIwCt";
     var queryURL ="https://api.nytimes.com/svc/archive/v1/2019/1.json?api-key=" + APIKey;
     
     $.ajax({
         url: queryURL,
         method: 'GET',
     }).then(function(response){
-        console.log("getting response" + response);
+        console.log(response);
     })
 })
