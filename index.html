@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NY Times Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+</head>
+<body>
+    
+    <div container="col-md-12">
+        <div class="jumbotron">
+            <h1 id="titleText"  class="display-4">NYTimes Search</h1>
+        </div>
+        
+        <div container="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    
+                    <h3 class="card-text">Search Parameters</h3>
+                    
+                    <form>
+                        
+                        <div class="form-group">
+                            
+                            <label for="exampleInputEmail1">Search Terms:</label>
+                            <input id="searchSpace" class="form-control" >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label  for="exampleInputPassword1">Number of Records to Retrieve:</label>
+                            <input id="numberSpace"  type="password" class="form-control">
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Start Year: (Optional)</label>
+                            <input id="startSpace" type="password" class="form-control">
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label id="endSpace" for="exampleInputPassword1">End Year: (Optional)</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        
+                        <button id="submitBtn" type="submit" class="btn btn-success">Submit</button>
+                        <button id="clearBtn" type="submit" class="btn btn-warning">Clear</button>
+
+                    </form>
+                </div>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
